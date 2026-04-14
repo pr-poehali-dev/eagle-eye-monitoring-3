@@ -1,28 +1,24 @@
-import { ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function Header() {
   return (
     <header className="flex items-center justify-between px-8 py-4">
       <div className="flex items-center gap-2">
-        <ФинПотокLogo />
+        <FamilyLogo />
         <span className="text-lg font-semibold text-white">
-          ФинПоток<sup className="text-xs">™</sup>
+          Семья<sup className="text-xs">™</sup>
         </span>
       </div>
 
       <nav className="hidden md:flex items-center gap-8">
         <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-          Продукты
-        </a>
-        <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors flex items-center gap-1">
-          Решения <ChevronDown className="h-4 w-4" />
+          Каталог
         </a>
         <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-          Ресурсы
+          Объявления
         </a>
         <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-          Тарифы
+          Члены семьи
         </a>
         <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
           Контакты
@@ -33,19 +29,19 @@ export function Header() {
         variant="outline"
         className="rounded-full border-violet-500 text-violet-400 hover:bg-violet-500/10 hover:text-violet-300 bg-transparent"
       >
-        Запросить демо
+        Войти
       </Button>
     </header>
   )
 }
 
-function ФинПотокLogo() {
+function FamilyLogo() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="8" cy="8" r="3" fill="#8B5CF6" />
-      <circle cx="16" cy="8" r="3" fill="#8B5CF6" opacity="0.6" />
-      <circle cx="8" cy="16" r="3" fill="#8B5CF6" opacity="0.6" />
-      <circle cx="16" cy="16" r="3" fill="#8B5CF6" opacity="0.4" />
+      <circle cx="12" cy="7" r="3" fill="#8B5CF6" />
+      <circle cx="6" cy="14" r="2.5" fill="#8B5CF6" opacity="0.7" />
+      <circle cx="18" cy="14" r="2.5" fill="#8B5CF6" opacity="0.7" />
+      <path d="M9 19c0-1.657 1.343-3 3-3s3 1.343 3 3" stroke="#8B5CF6" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
     </svg>
   )
 }
